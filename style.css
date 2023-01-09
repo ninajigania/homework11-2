@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.background {
+    background-image: url('./images/macos.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;   
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex img{
+    height:25px;
+    margin: 12px;
+
+}
+.header-wrapper li{
+    font-size: 12px;
+    margin-right: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.header-wrapper li:after{
+    content: '';
+    height: 10px;
+    width: 1px;
+    margin-left: 10px;
+    background-color: white;
+}
+.header-wrapper li:last-child:after {
+    display: none;
+}
+.absolute{
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+    height: 86px;
+    width: 750px;
+    color: wheat;
+    text-align: left;
+    letter-spacing: 9px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger span{
+    width: 60px;
+    height: 4px;
+    margin-top: 5px;
+    background-color: antiquewhite;
+}
+.mobile-nav{
+    display: none;
+    position: absolute;
+    width: 250px;
+    width: 40px;
+    top: 100px;
+    background-color: aliceblue;
+}
+
+@media(max-width:768px){
+    .burger{
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display: none;
+    }
+}
